@@ -1,0 +1,291 @@
+body {
+    background-color: darkslateblue;
+    background-image: url("../img/triangles.png");
+    margin: 0px;
+    padding: 0px;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+}
+a{
+    color: white;
+}
+a:visited{
+    color:grey;
+}
+#home-page{
+    background-color: #14002b;
+    background-image: url("../img/triangles.png");
+    padding-top: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    height: 1000px;
+
+}
+
+#timeline{
+
+    background:
+        url("../img/timeline.png") repeat-y  center,
+        url("../img/noisy_net_@2X.png") center  #005fc4;
+
+    padding-bottom: 200px;
+    padding-top: 0px;
+    margin-top: 0px;
+    background-size: 2px auto, auto;
+
+}
+p{
+    color: white;
+    text-align: left;
+    padding-right: 7px;
+    padding-left: 7px;
+}
+h2{
+    color: white;
+    text-align: left;
+}
+hr{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+
+}
+a img {
+    display: block;
+}
+#home-page h1{
+    color: white;
+    font-size: 600%;
+
+
+    margin-top: 0px;
+    /*push text position down closer to middle of div */
+    padding-top: 300px;
+
+
+
+
+}
+#home-page h2{
+    color: #cccccc;
+    font-size: 500%;
+    text-align: center;
+
+    margin-top: 0px;
+
+
+
+
+
+}
+
+div.timelineElement {
+
+
+    background-position: center;
+    margin-bottom: 180px;
+
+}
+
+
+div.timelineElement h2{
+
+
+
+    margin-top: 0px;
+
+    /* leave gap below year date heading */
+    margin-bottom: 40px;
+
+    color: white;
+
+    font-size: 400%;
+
+
+
+
+}
+
+
+
+div.timelineElement h3{
+
+
+    /* start this at higher than we actually want so we can animate it down*/
+    margin-top: -55px;
+    margin-bottom: 0px;
+    padding-right: 7px;
+    padding-left: 7px;
+
+
+    color: white;
+    text-align: center;
+    background-image:  url(../img/realTitleBackground.png);
+    background-size: 0%;
+
+    clear: both;
+
+}
+div.timelineElement h4 {
+    color: white;
+
+    /*if we have a month date we don't want it to increase the gap between the year date and the title of the box */
+    margin-top: -35px;
+    margin-bottom: 0px;
+
+    position: relative;
+    display: inline;
+    float: right;
+    clear: both;
+
+}
+/*
+    swaps date and title position for elements on left of timeline
+*/
+div.timelineElement img{
+    /*have images position lower than it animates to because it looks cool */
+    margin-bottom: 0px;
+    display: inline;
+    /*
+   margin-bottom: -70px;
+    */
+}
+div.timelineElement.right img {
+
+
+    float: left;
+
+    /*margin-left: 5%;*/
+}
+div.timelineElement.left img {
+
+
+
+    float: right;
+  /*  margin-left: 5%;*/
+}
+
+
+div .timelineElement.left h2{
+    text-align: right;
+    margin-right: 0%;
+}
+
+div .timelineElement.left h3{
+
+}
+div .timelineElement.right h3{
+
+}
+div .timelineElement.right h2{
+    margin-left: 0%;
+
+}
+div .timelineElement.right h4{
+    float: right;
+
+}
+div .timelineElement.left h4{
+    float: left;
+
+}
+
+
+
+div.timelineElement p{
+    text-align: center;
+    clear: both;
+    background-image:  url(../img/titleBackground.png);
+
+    color: grey;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    height: auto;
+    /*max height being used to set actual height */
+    max-height: 78px;
+    min-height: 78px;
+
+    overflow: hidden;
+
+    /*set animation properties for on hover changing height of paragraph box*/
+    transition-property: max-height;
+    /*this is longer than it should be because it will hit the auto size well before it hits max height */
+    transition-duration: 3s;
+    transition-timing-function: linear;
+
+
+}
+
+
+div.timelineElement p:hover{
+    /*
+    I want to set height to auto here but then it doesn't animate, so using max-height is a bit of a hack
+     this hack also means it takes a while for it to transition back after the user has stopped hovering which is annoying
+     */
+    max-height: 500px;
+}
+
+div.right {
+    margin-left: 50%;
+}
+div.left {
+    margin-right: 50%;
+}
+div.center {
+    margin-right : 30%;
+    margin-left : 30%;
+}
+/* this selector gets all the individual elements in a div of with classes timelineElement and left
+/*setting the size of the width of the timeline element box*/
+/* decreasing the margins will make it wider, increasing smaller */
+div .timelineElement.left > *{
+    margin-right: 20%;
+    margin-left: 20%;
+}
+div .timelineElement.right > *{
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+
+#topic-page {
+
+    margin-right: 10%;
+    margin-left: 10%;
+    background-image:  url(../img/titleBackground.png);
+
+}
+
+
+#topic-page h1{
+    background-image:  url(../img/realtitleBackground.png);
+}
+#topic-page h2 {
+    margin-left: 15%;
+    padding-top: 0px;
+
+}
+#topic-page p {
+    margin-left: 20%;
+    margin-right: 20%;
+    /*
+    padding-bottom: 50px;
+    */
+}
+
+
+
+
+
+
+
+
+
+
+
