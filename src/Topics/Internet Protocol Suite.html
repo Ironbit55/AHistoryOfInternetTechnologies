@@ -37,6 +37,8 @@
             The transmission control protocol is not a direct replacement of the Internet Protocol. It is a layer on top of it.
             TCP can be used by an application without the application having to know anything about
             the underlying communication protocol and how exactly it routes data i.e. how the internet protocol functions.
+            TCP presents an interface to the application that it can use as a simple, reliable host to host connection over
+            which it can send a stream of data.
             Packets sent through the Internet protocol can be lost, corrupted and delivered out of order. TCP detects and
             corrects these problems without the application using it having to know they even occurred. The application can
             then rely on the packets being delivered in the correct order and identical to the state they were in when
